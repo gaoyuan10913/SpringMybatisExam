@@ -19,4 +19,8 @@ public class CustomerServiceImpl implements CustomerService {
 		return null;
 	}
 
+	public Customer checkAddressId(int id) {
+		return null;
+	}
+
 }

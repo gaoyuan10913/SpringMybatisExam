@@ -1,6 +1,6 @@
 package com.hand.dto;
 
-import java.sql.Date;
+import java.util.Date;
 
 public class Customer {
 	private int customer_id;
@@ -73,8 +73,8 @@ public class Customer {
 		return create_date;
 	}
 
-	public void setCreate_date(Date create_date) {
-		this.create_date = create_date;
+	public void setCreate_date(java.util.Date date) {
+		this.create_date = date;
 	}
 
 	public Date getLast_update() {
