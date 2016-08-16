@@ -34,4 +34,7 @@
 		<property name="mapperInterface" value="com.hand.service.AddressService"></property>
 		<property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
 	</bean>
+	
+	<bean id="cStartEvent" class="com.hand.main.BeforeInsertEvent"></bean>
+	<bean id="cStopEvent" class="com.hand.main.AfterInsertEvent"></bean>
 </beans>
