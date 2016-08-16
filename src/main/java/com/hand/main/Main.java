@@ -63,6 +63,18 @@ public class Main {
 		System.out.println("Create Date:"+customer2.getCreate_date());
 		//插入后事件
 		ctx.stop();
+		
+		//删除customer_id
+		System.out.println("请输入要删除的Customer的ID：");
+		int temp = scanner.nextInt();
+		while(cs.checkCustomerId(temp) == null){
+			System.out.println("您输入的ID不存在，请重新输入");
+			temp = scanner.nextInt();
+		}
+		cs.deleteIdOfRental(temp);
+		cs.deleteIdOfPayment(temp);
+		cs.deleteByCustomerId(temp);
+		System.out.println("你输入的id为"+temp+"的Customer已经删除");
 	}
 	
 	static String getAddress(int addressId){

@@ -19,8 +19,20 @@ public class CustomerServiceImpl implements CustomerService {
 		return null;
 	}
 
-	public Customer checkAddressId(int id) {
+	public Customer checkCustomerId(int id) {
 		return null;
+	}
+
+	public void deleteIdOfPayment(int id) {
+		
+	}
+
+	public void deleteIdOfRental(int id) {
+		
+	}
+
+	public void deleteByCustomerId(int id) {
+		
 	}
 
 }

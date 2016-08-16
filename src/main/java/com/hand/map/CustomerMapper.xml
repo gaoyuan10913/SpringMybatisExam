@@ -31,7 +31,19 @@
 		<result property="last_update" column="last_update"></result>
 	</resultMap>
 
-	<select id="checkAddressId" parameterType="int" resultType="com.hand.dto.Customer">
-		select * from customer where address_id=#{address_id}
+	<select id="checkCustomerId" parameterType="int" resultType="com.hand.dto.Customer">
+		select * from customer where customer_id=#{customer_id}
 	</select>
+	
+	<delete id="deleteIdOfPayment" parameterType="int">
+		delete from payment where customer_id=#{i}
+	</delete>
+	
+	<delete id="deleteIdOfRental" parameterType="int">
+		delete from rental where customer_id=#{j}
+	</delete>
+	
+	<delete id="deleteByCustomerId" parameterType="int">
+		delete from customer where customer_id=#{k}
+	</delete>
 </mapper>  
