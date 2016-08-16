@@ -50,5 +50,8 @@
 	<classpathentry kind="lib" path="lib/spring-webmvc-portlet-4.3.0.RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/spring-websocket-4.3.0.RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/asm-3.3.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-dbcp2-2.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-pool2-2.4.2.jar"/>
+	<classpathentry kind="lib" path="lib/commons-collections4-4.1.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

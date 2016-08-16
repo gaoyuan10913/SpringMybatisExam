@@ -57,7 +57,7 @@ public class Main {
 		System.out.println("LastName:"+customer2.getLast_name());
 		System.out.println("Email:"+customer2.getEmail());
 		System.out.println("Address:"+addressName);
-		
+		System.out.println("Create Date:"+customer2.getCreate_date());
 	}
 	
 	static String getAddress(int addressId){
